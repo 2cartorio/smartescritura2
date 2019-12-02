@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Smart Escritura - 2º Tabelião</title>
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
+</head>
+<body>
+    <div class="conteudo"
+    div class="imagem"
+    <div align="center"></section><img src="imagens/logo.svg" alt="logo do 2º Tabelião Notas de São Paulo"/>
+    </div>
+
+    <h1>SMART ESCRITURA - COMPRA E VENDA</h1>
+
+
+
+    <h3>Saldo de depósito: <span id="boxBalance">0</span> - <button onclick="valorDepositado()">Recarregar</button></h3>
+    <hr>
+    <form name="frmPayment" id="frmPayment" action="#" method="get" onsubmit="executePayment(); return false;">
+        <div>
+            <label for="motivation">O que você quer pagar? Digite 1 para imóvel, 2 para emolumentos ou 3 para o valor total: </label>
+        </div>
+        <div>
+            <input type="text" name="motivation" id="motivation">
+        </div>
+        <div>
+            <label for="amount">Digite o valor (em wei) a ser depositado na Smart Escritura: </label>
+        </div>
+        <div>
+            <input type="number" name="amount" id="amount" value="1000000000000000"> Wei
+        </div>
+        <div>
+            &nbsp;
+        </div>
+        <div>
+            <button type="submit">Confirmar Pagamento</button>
+        </div>
+        <div>
+            &nbsp;
+        </div>
+        <div id="boxCommStatus">
+            (Status da Blockchain)
+        </div>
+    </form>
+    <script charset="utf-8"
+        src="https://cdn.ethers.io/scripts/ethers-v4.min.js"
+        type="text/javascript">
+    </script>
+    <script src="javascript/abi.js"></script>
+    <script src="javascript/blockchain.js"></script>
+    
+    <script>
+        valorDepositado();
+        </script>
+     
+    
+</body>
+</html>
+
